@@ -1,0 +1,412 @@
+/* CSS */
+
+/*
+Autor: Fernanda Assis;
+CSS com seletores alternativos e subscrições do materialize.css;
+Todos os seletores possuem o prefixo gd-* [Genesis Design];
+*/
+
+/* Font Raleway */
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+/* Tags*/
+html {	
+	font-family: raleway, helvetica, sans-serif;
+}
+
+h2 {
+	color: #ff5252;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 110%;
+    margin: 0.2rem 0 1.8rem 0;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #ff5252;
+	margin-bottom: 30px;
+}
+
+h5 {
+	font-size: 1.4rem;
+	margin-top: 1.2rem;
+	font-weight: 600;
+}
+
+h6 {
+    margin: 0;
+    color:	#969696;
+    padding-top: 1em;
+    padding-bottom: 1.2em;
+    font-size: 1em;
+    line-height: 0.9em;
+}
+
+p {
+	margin:	.5rem 0;
+	font-size: 1.1em;
+	line-height: 2;
+}
+
+/* MENU OFF-CANVAS */
+
+.gd-topbar {
+	position: fixed;
+	left: 0;
+	right: 0;
+	font-family: helvetica, sans-serif;
+	font-size: 1.4em;
+	font-weight: 600;
+	width: 100%;
+	height: auto;
+	line-height: 25px;
+	padding: 10px;
+	background-color: #fff;
+	text-transform: uppercase;
+	z-index: 10;
+	opacity: 0.9;
+    filter: Alpha(opacity=50); /* IE8 and earlier */
+}
+
+.gd-hamburguer {
+	color: #000;
+	padding-left: 8px;
+	padding-right: 15px;
+	-webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+	.gd-hamburguer:hover, .gd-hamburguer:active, .gd-hamburguer:focus {
+		color: #ff5252;
+	}
+
+.gd-logo-sm {
+	padding-bottom: 4px;
+	color: #000;
+	-webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+	.gd-logo-sm:hover, .gd-logo-sm:active, .gd-logo-sm:focus {
+		color: #ff5252;
+	}
+
+/* MENU ESTÁTICO */
+.fixed.gd-navbar li a {
+	height: 45px;
+    padding: 0 30px;
+    line-height: 45px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -ms-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+	.fixed.gd-navbar li a:hover, .fixed.gd-navbar li a:focus, .fixed.gd-navbar li a:active { 
+		border: none;
+		font-weight: 600;
+		background-color: #fff;
+		color: #ff5252;
+		/* Efeito deslizar*/
+		-webkit-transform: translateX(8px);
+		-moz-transform: translateX(8px);
+		-ms-transform: translateX(8px);
+		-o-transform: translateX(8px);
+		transform: translateX(8px);
+	}
+	.fixed.gd-navbar a.gd-logo {
+	font-family: helvetica, sans-serif;
+    margin: 2.3em 0em 2em 0em;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: transparent;
+    -webkit-transition: all 0.08s ease-out;
+    -moz-transition: all 0.08s ease-out;
+    -ms-transition: all 0.08s ease-out;
+    -o-transition: all 0.08s ease-out;
+    transition: all 0.08s ease-out;
+	}
+	.fixed.gd-navbar a.gd-logo:hover , .fixed.gd-navbar a.gd-logo:focus, .fixed.gd-navbar a.gd-logo:active {
+		color: #ff5252;
+	}
+
+.gd-navbar {
+	box-shadow: none;
+}
+
+
+/* ESTRUTURA */
+.l4 {
+	margin-left: -12px;
+	margin-right: -12px;
+}
+
+@media screen and (min-width: 993px) {
+	.gd-main {
+		padding-left: 18.700em;
+		margin: 0;
+	}
+	.gd-project-img {
+		padding-right: 25px;
+	}
+} 
+
+@media screen and (max-width: 992px) {
+	.gd-project-img {
+		padding-right: 13px;
+	}
+	.gd-main {
+		padding-top: 40px;
+	}
+}
+
+@media screen and (max-width: 601px) {
+	.gd-project-img {
+		padding-right: 0;
+	}
+} 
+
+@media screen and (max-width: 601px) {
+	.gd-main {
+		padding-left: 0px;
+		margin: 0;
+	}	
+
+} 
+
+.gd-container {
+    width: 99.7%;
+    padding: 20px 10px 0px 10px;
+}
+
+.gd-row { 
+	padding: 20px 0px 20px 0px;
+}
+
+.gd-form { 
+	padding-top: 20px;
+	margin-bottom: -20px
+}
+
+/* GALERIA DE IMAGENS*/
+.card {
+	box-shadow: none;
+	border-radius: 0;
+}	
+	.card .card-image img {
+		border-radius: 0;
+	}
+	.card .card-content {
+	    padding: 0;
+	    border-radius: 0;
+	}
+
+.gd-overlay {
+	position: absolute;
+	top:0;
+	left: 0;
+	opacity: 0.0;
+	width: 100%;
+	height: 100%; 
+	transition: all .15s ease-out;
+	-webkit-transition: all .15s ease-out;
+	-moz-transition: all .15s ease-out;
+	-o-transition: all .15s ease-out;
+}
+	.gd-overlay:hover {
+		opacity: 1;
+		background-color: rgba(0,0,0,0.4);
+		cursor: pointer;
+	}
+
+/* SOBRE MIM */
+.gd-download {
+	color: #ff5252;
+}
+
+img.responsive-img {
+	width: 200px;
+    height: 200px;
+    display: block;
+    margin: 10px auto;
+    padding: 4px;
+    border: 1px solid #d7ccc8;
+}
+
+.gd-blockquotes {
+	font-size: 1.4em;
+	line-height: 1.5;
+	margin-top: 20px;
+}
+
+.gd-btn-flat {
+	display: block;
+	margin: 30px auto 15px;	
+}
+	.gd-btn-flat:hover, .gd-btn-flat:focus, .gd-btn-flat:active {
+		background-color: #efebe9;	
+	}
+
+/* Barra de Progresso*/
+@-webkit-keyframes listras-anim {from { background-position:40px 0} to{ background-position:0 0 }}
+@-moz-keyframes listras-anim {from{ background-position:40px 0 } to{ background-position:0 0 }}
+@-o-keyframes listras-anim{from { background-position:40px 0} to{ background-position:0 0 }}
+@keyframes listras-anim{ from{ background-position:40px 0 } to{ background-position:0 0 }}
+
+.gd-progress {
+	overflow: hidden;
+	height: 12px;
+	background-color: #d7ccc8;
+	padding: 0px;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.gd-progress-bar {
+	width: 100%;
+	height: 12px;
+	background-color: #64b5f6;
+	-webkit-transition: width .6s ease;
+	transition: width .6s ease
+}
+
+.gd-progress-bar75 {
+	width: 75%;
+	height: 12px;
+	background-color: #42a5f5;
+	-webkit-transition: width .6s ease;
+	transition: width .6s ease
+}
+
+.gd-bar90 {
+	width: 90%
+}
+
+.gd-bar80 {
+	width: 80%
+}
+
+.gd-bar50 {
+	width: 50%
+}
+
+.gd-bar25 {
+	width: 25%
+}
+
+.gd-progress .gd-progress-bar, .gd-progress .gd-progress-bar75 {
+	background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255,255,255,.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255,255,255,.15)), color-stop(0.75, rgba(255,255,255,.15)), color-stop(0.75, transparent), to(transparent));
+	background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,.15)25%, transparent 25%, transparent 50%, rgba(255,255,255,.15)50%, rgba(255,255,255,.15)75%, transparent 75%, transparent);
+	background-image: -moz-linear-gradient(45deg, rgba(255,255,255,.15)25%, transparent 25%, transparent 50%, rgba(255,255,255,.15)50%, rgba(255,255,255,.15)75%, transparent 75%, transparent);
+	background-image: linear-gradient(45deg, rgba(255,255,255,.15)25%, transparent 25%, transparent 50%, rgba(255,255,255,.15)50%, rgba(255,255,255,.15)75%, transparent 75%, transparent);
+	background-size: 40px 40px
+}
+	.gd-progress.gd-active .gd-progress-bar, .gd-progress.gd-active .gd-progress-bar75 {
+		-webkit-animation: listras-anim 2s linear infinite;
+		-moz-animation: listras-anim 2s linear infinite;
+		-ms-animation: listras-anim 2s linear infinite;
+		-o-animation: listras-anim 2s linear infinite;
+		animation: listras-anim 2s linear infinite
+	}
+
+/* CONTATO */
+
+.gd-btn {
+	margin-top: 10px;
+	height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+	padding: 0 2.5rem;
+	color: #ff5252;
+	border: 2px solid #ff5252;
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.gd-btn:hover, .gd-btn:focus {
+	height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+	color: #fff;
+	border: 2px solid transparent;
+	background-color: #ff5252;
+	box-shadow: none;
+}
+
+/* Formulário | Inputs*/
+/* Cor dos inputs */
+.input-field label { 
+	color: #545454;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label {
+	color: #0288d1
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label, .input-field input[type=email]:focus + label, {
+	color: #0288d1
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus, .input-field input[type=email]:focus {
+	border-bottom: 1px solid #0288d1;
+	box-shadow: 0 1px 0 0 #0288d1;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+	color: #545454;
+}
+
+/* textarea label */
+.input-field .materialize-textarea {
+	color: #545454;
+}
+
+/* textarea label focus color */
+.input-field .materialize-textarea:focus + label {
+	color: #0288d1 !important;
+}
+
+/* textarea imput*/
+textarea.materialize-textarea:focus:not([readonly]) {
+	border-bottom: 1px solid #0288d1;
+	box-shadow: 0 1px 0 0 #0288d1;
+}
+
+.gd-redesociais {
+	height: 70px;
+	width: 70px;
+	margin: 0 10px 20px 0;
+	color: #8e8e8e;
+	font-size: x-large;
+	border: thin solid transparent;
+	border-radius: 100px;
+	padding: 1px 22px;
+	line-height: 70px;
+	display: inline-block;
+	-webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -ms-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+	.gd-redesociais:hover, .gd-redesociais:focus {
+		background-color: #efebe9;
+		color: #ff5252;
+	}
